@@ -76,7 +76,6 @@
     .o2-dt { font: 500 22px var(--f-mono); color: var(--faint); }
     .o2-rl { margin-top: 34px; height: 300px; background: repeating-linear-gradient(transparent 0 55px, var(--rule) 55px 58px); }
   </style>
-  <div class="abs K o2-k">先暖身</div>
   <h2 class="abs T o2-q"><span class="ln">有沒有一件你深信的事，</span><span class="ln">後來你真的改變了心意？</span><span class="ln">那一次，發生了什麼事？</span></h2>
   <div class="abs o2-ch"><i>什麼都可以</i><span>工作</span><span>人生</span><span>對 AI 的看法</span></div>
   <p class="abs o2-do">拿出手機，打開備忘錄，用一句話記下來。<br>不用分享，最後一段我們會回來看它。</p>
@@ -89,19 +88,17 @@
     .o3-c h3 { font: 900 42px/1.25 var(--f-display); margin: 26px 0 18px; white-space: nowrap; }
     .o3-c p { font-size: 30px; line-height: 1.5; margin: 0; color: var(--ink-2); }
   </style>
-  <div class="abs K o3-k">今天的路線</div>
   <h2 class="abs T T-m o3-t"><span class="ln">三個知識點，是一條線</span></h2>
   ${mt(`<path class="s o3-path" d="M${$t(0)+kt/2} 372 C${$t(0)+kt/2+170} 300 ${$t(1)+kt/2-170} 300 ${$t(1)+kt/2} 372 C${$t(1)+kt/2+170} 300 ${$t(2)+kt/2-170} 300 ${$t(2)+kt/2} 372" style="stroke: var(--faint)"/>`)}
-  ${Yp.map(([n,t,e,i],r)=>`<div class="box o3-c" style="left:${$t(r)}px; --cc:${i}"><b>${n}</b><h3>${t}</h3><p>${e}</p></div>`).join("")}`,build({tl:n,q:t,fx:e,hero:i}){e.rise(n,t(".o3-k"),{at:0}),e.lines(n,t(".o3-t")[0],{at:.05}),e.pop(n,t(".o3-c"),{at:.3,stagger:.14}),e.draw(n,t(".o3-path"),{at:.9,duration:1.6,ease:"power1.inOut"}),i.to(n,{x:$t(1)+kt/2,y:300,r:20},1,{duration:.4,ease:"power2.out"}),i.to(n,{x:$t(1)+kt/2,y:372,r:20},1.4,{duration:.3,ease:"power2.in"}),i.to(n,{x:$t(2)+kt/2,y:300,r:20},1.8,{duration:.4,ease:"power2.out"}),i.to(n,{x:$t(2)+kt/2,y:372,r:20},2.2,{duration:.3,ease:"power2.in"})}},pt=n=>180+(n-1800)*6.6,ne=640,so=[["馬克思",1818,1883,"var(--c1)","var(--ink)"],["波普",1902,1994,"var(--c2)","#fff"],["圖靈",1912,1954,"var(--c3)","#fff"],["孔恩",1922,1996,"var(--c2)","#fff"],["瑟爾",1932,2025,"var(--c3)","#fff"]],Gp=[["工業革命",1800,1840,"#f6e3c4"],["一戰",1914,1918,"#dcdfd6"],["二戰",1939,1945,"#dcdfd6"],["冷戰",1947,1991,"#e4e7de"]],ao=[[1848,"1848 共產黨宣言","var(--c1)",730,"start"],[1867,"1867 資本論","var(--c1)",768,"start"],[1917,"1917 俄國革命","var(--c1)",730,"start"],[1922,"1922 蘇聯成立","var(--c1)",768,"start"],[1949,"1949 中華人民共和國成立","var(--c1)",768,"start"],[1959,"1959 古巴革命","var(--c1)",730,"start"],[1990,"1989–91 東歐劇變、蘇聯解體","var(--c1)",730,"start"],[1919,"1919 日食觀測","var(--c2)",822,"start"],[1962,"1962 科學革命的結構","var(--c2)",822,"start"],[1936,"1936 圖靈機","var(--c3)",876,"start"],[1946,"ENIAC 公開 1946","var(--c3)",914,"end"],[1950,"1950 模仿遊戲","var(--c3)",914,"start"],[1980,"1980 中文房","var(--c3)",876,"start"],[2022,"ChatGPT 推出 2022","var(--c3)",914,"end"]],Yn=pt(2026),Up={id:"O4",chapter:"open",title:"年代地圖",tags:[{kind:"outside",text:"事件年份：書外資料"}],hero:{x:Yn,y:ne,r:16},heroStart:{x:pt(1800),y:ne,r:16},notes:"讀圖方式：上半部是五個人的一生，背景色塊是他們所處的大時代；下半部三條事件線，分別對應三章。黃點沿著時間軸走到今天。<br>馬克思一生都在工業革命的餘波裡，寫完《資本論》時還沒有任何一個共產國家；他過世 34 年後才有俄國革命。<br>波普的一生幾乎與蘇聯重疊（1922–1991），他批評馬克思史觀時，共產國家正在擴張；孔恩的《科學革命的結構》出版於冷戰高峰。<br>圖靈在二戰期間破解密碼，戰後第一批電子計算機陸續出現；瑟爾的中文房提出 42 年後，ChatGPT 推出，他在 2025 年過世，親眼看到了他論證的對象成真。<br>「第一台電腦」說法不一：二戰時英國在布萊切利莊園已有破譯用的 Colossus，ENIAC 則常被稱為第一台通用電子計算機（1945 年完成、1946 年公開）。",html:`
+  ${Yp.map(([n,t,e,i],r)=>`<div class="box o3-c" style="left:${$t(r)}px; --cc:${i}"><b>${n}</b><h3>${t}</h3><p>${e}</p></div>`).join("")}`,build({tl:n,q:t,fx:e,hero:i}){e.rise(n,t(".o3-k"),{at:0}),e.lines(n,t(".o3-t")[0],{at:.05}),e.pop(n,t(".o3-c"),{at:.3,stagger:.14}),e.draw(n,t(".o3-path"),{at:.9,duration:1.6,ease:"power1.inOut"}),i.to(n,{x:$t(1)+kt/2,y:300,r:20},1,{duration:.4,ease:"power2.out"}),i.to(n,{x:$t(1)+kt/2,y:372,r:20},1.4,{duration:.3,ease:"power2.in"}),i.to(n,{x:$t(2)+kt/2,y:300,r:20},1.8,{duration:.4,ease:"power2.out"}),i.to(n,{x:$t(2)+kt/2,y:372,r:20},2.2,{duration:.3,ease:"power2.in"})}},pt=n=>180+(n-1800)*6.6,ne=640,so=[["馬克思",1818,1883,"#B45F08","#fff"],["波普",1902,1994,"var(--c2)","#fff"],["圖靈",1912,1954,"var(--c3)","#fff"],["孔恩",1922,1996,"var(--c2)","#fff"],["瑟爾",1932,2025,"var(--c3)","#fff"]],Gp=[["工業革命",1800,1840,"#f6e3c4"],["一戰",1914,1918,"#dcdfd6"],["二戰",1939,1945,"#dcdfd6"],["冷戰",1947,1991,"#e4e7de"]],ao=[[1848,"1848 共產黨宣言","var(--c1)",730,"start"],[1867,"1867 資本論","var(--c1)",768,"start"],[1917,"1917 俄國革命","var(--c1)",730,"start"],[1922,"1922 蘇聯成立","var(--c1)",768,"start"],[1949,"1949 中華人民共和國成立","var(--c1)",768,"start"],[1959,"1959 古巴革命","var(--c1)",730,"start"],[1990,"1989–91 東歐劇變、蘇聯解體","var(--c1)",730,"start"],[1919,"1919 日食觀測","var(--c2)",822,"start"],[1962,"1962 科學革命的結構","var(--c2)",822,"start"],[1936,"1936 圖靈機","var(--c3)",876,"start"],[1946,"ENIAC 公開 1946","var(--c3)",914,"end"],[1950,"1950 模仿遊戲","var(--c3)",914,"start"],[1980,"1980 中文房","var(--c3)",876,"start"],[2022,"ChatGPT 推出 2022","var(--c3)",914,"end"]],Yn=pt(2026),Up={id:"O4",chapter:"open",title:"年代地圖",tags:[{kind:"outside",text:"事件年份：書外資料"}],hero:{x:Yn,y:ne,r:16},heroStart:{x:pt(1800),y:ne,r:16},notes:"讀圖方式：上半部是五個人的一生，背景色塊是他們所處的大時代；下半部三條事件線，分別對應三章。黃點沿著時間軸走到今天。<br>馬克思一生都在工業革命的餘波裡，寫完《資本論》時還沒有任何一個共產國家；他過世 34 年後才有俄國革命。<br>波普的一生幾乎與蘇聯重疊（1922–1991），他批評馬克思史觀時，共產國家正在擴張；孔恩的《科學革命的結構》出版於冷戰高峰。<br>圖靈在二戰期間破解密碼，戰後第一批電子計算機陸續出現；瑟爾的中文房提出 42 年後，ChatGPT 推出，他在 2025 年過世，親眼看到了他論證的對象成真。<br>「第一台電腦」說法不一：二戰時英國在布萊切利莊園已有破譯用的 Colossus，ENIAC 則常被稱為第一台通用電子計算機（1945 年完成、1946 年公開）。",html:`
   <style>
     .o4-k { left: 120px; top: 140px; }
     .o4-t { left: 116px; top: 176px; }
   </style>
-  <div class="abs K o4-k">先看時代</div>
   <h2 class="abs T T-s o4-t"><span class="ln">年代地圖：從工廠煙囪到第一台電腦</span></h2>
   ${mt(`
     ${Gp.map(([n,t,e,i])=>`<g class="o4-band"><rect x="${pt(t)}" y="300" width="${pt(e)-pt(t)}" height="${ne-300}" fill="${i}"/><text x="${(pt(t)+pt(e))/2}" y="290" text-anchor="middle" font-size="24" font-weight="700" fill="var(--graphite)">${n}</text></g>`).join("")}
-    ${so.map(([n,t,e,i,r],s)=>`<g class="o4-bar"><rect x="${pt(t)}" y="${318+s*60}" width="${pt(e)-pt(t)}" height="46" rx="4" fill="${i}" stroke="var(--ink)" stroke-width="4"/><text x="${pt(t)+14}" y="${350+s*60}" font-size="26" font-weight="700" fill="${r}">${n}　<tspan font-family="var(--f-mono)" font-size="24">${t}–${e}</tspan></text></g>`).join("")}
+    ${so.map(([n,t,e,i,r],s)=>`<g class="o4-bar"><rect x="${pt(t)}" y="${318+s*60}" width="${pt(e)-pt(t)}" height="46" rx="4" fill="${i}" stroke="var(--ink)" stroke-width="4"/><text x="${pt(t)+14}" y="${350+s*60}" font-size="26" font-weight="700" style="fill:${r}">${n}　<tspan font-family="var(--f-mono)" font-size="24">${t}–${e}</tspan></text></g>`).join("")}
     <path class="s o4-ax" d="M150 ${ne} L1800 ${ne}"/>
     ${[1800,1850,1900,1950,2e3].map(n=>`<g class="o4-tick"><path class="s4" d="M${pt(n)} ${ne-10} L${pt(n)} ${ne+10}"/><text x="${pt(n)}" y="${ne+44}" text-anchor="middle" font-family="var(--f-mono)" font-size="24" fill="var(--graphite)">${n}</text></g>`).join("")}
     <text class="o4-lane" x="120" y="678" font-size="0"></text>
@@ -118,7 +115,6 @@
     .o5-rule { left: 120px; top: 860px; width: 1680px; display: flex; gap: 40px; }
     .o5-rule p { flex: 1; font-size: 30px; line-height: 1.45; margin: 0; padding-left: 20px; border-left: 8px solid var(--one); }
   </style>
-  <div class="abs K o5-k">接下來三個問題都這樣進行</div>
   <h2 class="abs T T-m o5-t"><span class="ln">怎麼接話：一人說，兩人接</span></h2>
   ${mt(ct.map((n,t)=>pi(n,610,230,{fill:["#f9faf6","#f9faf6","#f9faf6"][t],cls:"o5-p"})).join("")+`<path class="s o5-a" d="M${ct[0]+80} 530 L${ct[1]-80} 530 M${ct[1]-100} 512 L${ct[1]-80} 530 L${ct[1]-100} 548"/><path class="s o5-a" d="M${ct[1]+80} 530 L${ct[2]-80} 530 M${ct[2]-100} 512 L${ct[2]-80} 530 L${ct[2]-100} 548"/>`)}
   ${Wp.map(([n,t,e],i)=>`<div class="o5-s" style="left:${ct[i]}px"><b>${n}</b><h3>${t}</h3><p>${e}</p></div>`).join("")}
@@ -142,7 +138,6 @@
     <div class="ph-hint">把照片拖進來</div>
   </div>
   <div class="abs ${t}-cap">${n.en.toUpperCase()}｜${n.years}</div>
-  <div class="abs K ${t}-k">${n.kicker}</div>
   <h2 class="abs T T-m ${t}-t"><span class="ln">${n.name}<small>${n.years}｜${n.place}</small></span></h2>
   ${mt(`<path class="s4 ${t}-ax" d="M${Ht} ${Pe(0)-6} L${Ht} ${Pe(e)+6}" style="stroke: var(--rule)"/>
     ${n.rows.map((i,r)=>`<circle class="${t}-dot" cx="${Ht}" cy="${Pe(r)}" r="9" fill="var(--card)" stroke="var(--ch)" stroke-width="6"/>`).join("")}`)}
@@ -166,7 +161,6 @@
     .${t}-board { left: ${s}px; top: ${i}px; width: ${a}px; height: ${o}px; padding: 18px 24px 20px; display: flex; flex-direction: column; gap: 12px; }
     .${t}-cap { left: ${s}px; top: ${i+o+18}px; width: ${a}px; font-size: 26px; line-height: 1.4; color: var(--graphite); }
   </style>
-  <div class="abs K ${t}-k">${n.kicker}</div>
   ${n.warm?`<div class="abs ${t}-w"><b>暖身・30 秒</b><span>${n.warm}</span></div>`:""}
   <h2 class="abs T ${t}-q"><span class="ln">${n.q[0]}</span><span class="ln">${n.q[1]}</span></h2>
   <div class="abs ${t}-ll">帶著 ____ 的視角挑戰<small>接話的人挑一個</small></div>
@@ -176,7 +170,7 @@
   ${Kr(250,300,130,{n:10,fill:"#EB901D"})}
   ${Kr(392,168,72,{n:7,fill:"#f9faf6"})}
   ${Kr(120,452,64,{n:7,fill:"#f9faf6"})}
-</svg>`,ed=Sr({id:"A1",chapter:"a",key:"marx",name:"馬克思",en:"Karl Marx",years:"1818–1883",place:"德國 → 倫敦",kicker:"人物｜第 27 章",tags:[{kind:"outside",text:"生平年份：書外資料"}],emblem:td,rows:[["1818","生於普魯士特里爾，父親是律師"],["1841","在柏林讀法律與哲學，加入青年黑格爾派，取得博士"],["1843","主編的報紙遭查禁，流亡巴黎；隔年結識恩格斯"],["1848","被逐往布魯塞爾，與恩格斯合著《共產黨宣言》"],["1849","定居倫敦，貧困中三個孩子早夭；1867 年出版《資本論》"]],why:"從黑格爾學到「歷史有方向」，在恩格斯家族的紡織廠看見工人處境；一生被驅逐、窮困，讓他不只想解釋世界，更想改變它。",notes:"黃點沿著他的一生往下走。書中細節可以補充：他後半生幾乎每天走到大英博物館閱覽室寫作，手寫字跡難讀到自己都看不懂，只好口述給妻子珍妮；恩格斯替他找撰稿工作，甚至領養了他與管家的私生子。北英格蘭棉花工廠：一天約 14 小時，兒童也在其中。<br>生平年份（1841、1843、1849、1867）與恩格斯家族紡織廠為書外資料。"}),nr={x:1100,y:330,w:680,h:460},Vn=(n,t)=>({x:nr.x+n/100*nr.w,y:nr.y+t/100*nr.h-26}),id={id:"A0",chapter:"a",title:"第 27 章",full:!0,bare:!0,hero:{...Vn(84,18),r:22},heroStart:{...Vn(0,72),r:22},notes:"章節開場。念出問題，停一下。墨線畫出工廠的屋頂線：這一章講的是「結構」。",html:`
+</svg>`,ed=Sr({id:"A1",chapter:"a",key:"marx",name:"馬克思",en:"Karl Marx",years:"1818–1883",place:"德國 → 倫敦",tags:[{kind:"outside",text:"生平年份：書外資料"}],emblem:td,rows:[["1818","生於普魯士特里爾，父親是律師"],["1841","在柏林讀法律與哲學，加入青年黑格爾派，取得博士"],["1843","主編的報紙遭查禁，流亡巴黎；隔年結識恩格斯"],["1848","被逐往布魯塞爾，與恩格斯合著《共產黨宣言》"],["1849","定居倫敦，貧困中三個孩子早夭；1867 年出版《資本論》"]],why:"從黑格爾學到「歷史有方向」，在恩格斯家族的紡織廠看見工人處境；一生被驅逐、窮困，讓他不只想解釋世界，更想改變它。",notes:"黃點沿著他的一生往下走。書中細節可以補充：他後半生幾乎每天走到大英博物館閱覽室寫作，手寫字跡難讀到自己都看不懂，只好口述給妻子珍妮；恩格斯替他找撰稿工作，甚至領養了他與管家的私生子。北英格蘭棉花工廠：一天約 14 小時，兒童也在其中。<br>生平年份（1841、1843、1849、1867）與恩格斯家族紡織廠為書外資料。"}),nr={x:1100,y:330,w:680,h:460},Vn=(n,t)=>({x:nr.x+n/100*nr.w,y:nr.y+t/100*nr.h-26}),id={id:"A0",chapter:"a",title:"第 27 章",full:!0,bare:!0,hero:{...Vn(84,18),r:22},heroStart:{...Vn(0,72),r:22},notes:"章節開場。念出問題，停一下。墨線畫出工廠的屋頂線：這一章講的是「結構」。",html:`
   <style>
     .a0-k { left: 140px; top: 300px; }
     .a0-t { left: 128px; top: 350px; }
@@ -194,7 +188,6 @@
     .a2-n.last h3 { color: var(--graphite); }
     .a2-num { font: 600 56px var(--f-mono); }
   </style>
-  <div class="abs K a2-k">知識點一｜第 27 章｜馬克思</div>
   <h2 class="abs T T-s a2-t"><span class="ln">制度會塑造人：分工如何讓工人變成齒輪</span></h2>
   ${mt(`
     ${vt.slice(0,3).map((n,t)=>`<g class="a2-c"><circle cx="${n}" cy="${_t}" r="82" class="s fs"/><text x="${n}" y="${_t+20}" text-anchor="middle" class="a2-num">${t+1}</text></g>`).join("")}
@@ -216,13 +209,12 @@
     .a3-x b { font: 700 28px var(--f-body); }
     .a3-x p { font-size: 28px; line-height: 1.5; margin: 6px 0 0; }
   </style>
-  <div class="abs K a3-k">知識點一｜第 27 章｜馬克思</div>
   <h2 class="abs T T-s a3-t"><span class="ln">共產之夢：一個理論怎麼面對失敗？</span></h2>
   <div class="box a3-c" style="left:${Qt(0)}px"><div class="a3-in"><span class="lab">理想</span><h3>人人得其所需</h3><p>「人人盡己所能，人人得其所需」；號召工人：失去的只有枷鎖。</p></div></div>
   <div class="box a3-c" style="left:${Qt(1)}px"><div class="a3-in"><span class="lab">實踐</span><h3>1917，理論成真</h3><p>書中形容後來的共產國家：暴虐、無效率又腐敗。</p></div></div>
   <div class="box a3-c a3-c3" style="left:${Qt(2)}px"><div class="a3-in"><span class="lab">辯護</span><h3>錯的是執行者</h3><p>支持者說：失敗的是執行者，他們沒有真正遵循馬克思的路線。</p></div><div class="a3-cov">?</div></div>
   <div class="abs a3-ar" style="left:${Qt(1)-40}px">→</div><div class="abs a3-ar" style="left:${Qt(2)-40}px">→</div>
-  <div class="abs a3-x"><b>↔ 第 18 章 盧梭／第 22 章 黑格爾／第 28 章 詹姆斯</b><p>枷鎖呼應《社會契約論》；歷史觀承接黑格爾；詹姆斯則問：一個觀念，對世界造成了什麼差別？</p></div>`,build({tl:n,q:t,fx:e,hero:i,step:r}){e.rise(n,t(".a3-k"),{at:0}),e.lines(n,t(".a3-t")[0],{at:.05}),e.pop(n,t(".a3-c"),{at:.3,stagger:.14}),n.from(t(".a3-ar"),{opacity:0,x:-20,duration:.4,stagger:.14},.6),i.to(n,{x:Qt(0)+470,y:Le,r:20},.6,{duration:.45,ease:"power3.in"}),i.to(n,{x:Qt(1)+250,y:Le-70,r:20},1.4,{duration:.35,ease:"power2.out"}),i.to(n,{x:Qt(1)+470,y:Le+300,r:18},1.75,{duration:.5,ease:"power3.in"}),i.color(n,"#a3a8ae",2.1),e.rise(n,t(".a3-x"),{at:2}),r(s=>{s.to(t(".a3-cov"),{yPercent:-100,duration:.6,ease:"power3.inOut"},0),e.rise(s,t(".a3-c3 h3, .a3-c3 p"),{at:.3,stagger:.06,y:20}),i.color(s,"#ffc21a",.5),i.to(s,{x:Qt(2)+470,y:Le,r:20},.5,{duration:.5,ease:"back.out(1.6)"}),i.label(s,"伏筆：怎麼解釋都對？",1)})}},ad=Ks({id:"A4",chapter:"a",title:"問題一｜重新設計一段流程",kicker:"問題一｜第 27 章｜馬克思",tags:[{kind:"mine",text:"討論"}],warm:"先想一段你曾經覺得自己像齒輪的工作。",q:["如果讓你重新設計團隊裡的一段流程，","你會改哪裡，讓做事的人不再像齒輪？"],lenses:[["馬克思","這個改變，有讓做的人看見全貌嗎？","var(--c1)"],["剩餘價值","改變後多出來的價值，流向了誰？","var(--c1)"],["書中反方","如果效率因此變差，老闆和市場會接受嗎？","var(--c2)"]],boardLabel:"白板｜你的改法，解掉了哪一環？",board:`<div class="bd-cols">${[["看見全貌","解掉：看不見全貌","做的人能看到前後哪一段？"],["分到價值","解掉：剩餘價值","多出來的成果，誰分得到？"],["發揮創造","解掉：異化","哪裡能讓人自己決定怎麼做？"]].map(([n,t,e],i)=>`<div class="bd-col"><b>${n}</b><i>${t}</i><textarea data-k="c${i}" placeholder="${e}" spellcheck="false"></textarea></div>`).join("")}</div>`,caption:"三欄是馬克思的因果鏈倒過來看。哪一欄最空，就是今天最難的一題。",notes:"先一起暖身 30 秒，再問主問題。<br>白板怎麼用：三欄對應知識點一的因果鏈，倒過來就是解法——「看見全貌」解「看不見全貌」，「分到價值」解「剩餘價值」，「發揮創造」解「異化」。第一個人說完一段流程和他的改法後，由你判斷這個改法主要解掉哪一環，打進那一欄（一行一個提案）；拿不準就問他本人：「你這個改變，主要是讓人看得更多、分得更多，還是能自己決定更多？」<br>接話的人按下一步後挑一個視角挑戰。最常用的是「書中反方」：人性比馬克思承認的更具競爭性，效率與人性之間真的能兼得嗎？<br>收尾：哪一欄最空，代表我們最不知道怎麼做的是什麼。<br>操作：點白板欄位就能打字；打完按 Esc 離開輸入框，再用方向鍵換頁。內容會存在這台電腦的瀏覽器。"}),mi=n=>770+n*104,Oe=616,od={id:"A1a",chapter:"a",title:"亞當斯密的製針工廠",tags:[{kind:"outside",text:"《國富論》1776：書外資料"}],hero:{x:mi(9)+10,y:Oe-18,r:16},heroStart:{x:mi(0)-70,y:Oe-18,r:16,o:0},notes:"先講馬克思之前的人怎麼看分工。亞當斯密在《國富論》（1776）第一篇第一章描述一間製針工廠：做一根針可以拆成大約 18 道工序（拉線、拉直、切斷、磨尖、做針頭……）。十個人分工，一天能做出四萬八千根以上，平均每人四千八百根；同樣的人如果各自從頭做到尾，一天恐怕連 20 根都做不出來。<br>亞當斯密看到的是效率與國家的富裕。馬克思讀過同一段（《資本論》多次引用亞當斯密），他看到的是另一件事——下一頁。",html:`
+  <div class="abs a3-x"><b>↔ 第 18 章 盧梭／第 22 章 黑格爾／第 28 章 詹姆斯</b><p>枷鎖呼應《社會契約論》；歷史觀承接黑格爾；詹姆斯則問：一個觀念，對世界造成了什麼差別？</p></div>`,build({tl:n,q:t,fx:e,hero:i,step:r}){e.rise(n,t(".a3-k"),{at:0}),e.lines(n,t(".a3-t")[0],{at:.05}),e.pop(n,t(".a3-c"),{at:.3,stagger:.14}),n.from(t(".a3-ar"),{opacity:0,x:-20,duration:.4,stagger:.14},.6),i.to(n,{x:Qt(0)+470,y:Le,r:20},.6,{duration:.45,ease:"power3.in"}),i.to(n,{x:Qt(1)+250,y:Le-70,r:20},1.4,{duration:.35,ease:"power2.out"}),i.to(n,{x:Qt(1)+470,y:Le+300,r:18},1.75,{duration:.5,ease:"power3.in"}),i.color(n,"#a3a8ae",2.1),e.rise(n,t(".a3-x"),{at:2}),r(s=>{s.to(t(".a3-cov"),{yPercent:-100,duration:.6,ease:"power3.inOut"},0),e.rise(s,t(".a3-c3 h3, .a3-c3 p"),{at:.3,stagger:.06,y:20}),i.color(s,"#ffc21a",.5),i.to(s,{x:Qt(2)+470,y:Le,r:20},.5,{duration:.5,ease:"back.out(1.6)"}),i.label(s,"伏筆：怎麼解釋都對？",1)})}},ad=Ks({id:"A4",chapter:"a",title:"問題一｜重新設計一段流程",tags:[{kind:"mine",text:"討論"}],warm:"先想一段你曾經覺得自己像齒輪的工作。",q:["如果讓你重新設計團隊裡的一段流程，","你會改哪裡，讓做事的人不再像齒輪？"],lenses:[["馬克思","這個改變，有讓做的人看見全貌嗎？","var(--c1)"],["剩餘價值","改變後多出來的價值，流向了誰？","var(--c1)"],["書中反方","如果效率因此變差，老闆和市場會接受嗎？","var(--c2)"]],boardLabel:"白板｜你的改法，解掉了哪一環？",board:`<div class="bd-cols">${[["看見全貌","解掉：看不見全貌","做的人能看到前後哪一段？"],["分到價值","解掉：剩餘價值","多出來的成果，誰分得到？"],["發揮創造","解掉：異化","哪裡能讓人自己決定怎麼做？"]].map(([n,t,e],i)=>`<div class="bd-col"><b>${n}</b><i>${t}</i><textarea data-k="c${i}" placeholder="${e}" spellcheck="false"></textarea></div>`).join("")}</div>`,caption:"三欄是馬克思的因果鏈倒過來看。哪一欄最空，就是今天最難的一題。",notes:"先一起暖身 30 秒，再問主問題。<br>白板怎麼用：三欄對應知識點一的因果鏈，倒過來就是解法——「看見全貌」解「看不見全貌」，「分到價值」解「剩餘價值」，「發揮創造」解「異化」。第一個人說完一段流程和他的改法後，由你判斷這個改法主要解掉哪一環，打進那一欄（一行一個提案）；拿不準就問他本人：「你這個改變，主要是讓人看得更多、分得更多，還是能自己決定更多？」<br>接話的人按下一步後挑一個視角挑戰。最常用的是「書中反方」：人性比馬克思承認的更具競爭性，效率與人性之間真的能兼得嗎？<br>收尾：哪一欄最空，代表我們最不知道怎麼做的是什麼。<br>操作：點白板欄位就能打字；打完按 Esc 離開輸入框，再用方向鍵換頁。內容會存在這台電腦的瀏覽器。"}),mi=n=>770+n*104,Oe=616,od={id:"A1a",chapter:"a",title:"亞當斯密的製針工廠",tags:[{kind:"outside",text:"《國富論》1776：書外資料"}],hero:{x:mi(9)+10,y:Oe-18,r:16},heroStart:{x:mi(0)-70,y:Oe-18,r:16,o:0},notes:"先講馬克思之前的人怎麼看分工。亞當斯密在《國富論》（1776）第一篇第一章描述一間製針工廠：做一根針可以拆成大約 18 道工序（拉線、拉直、切斷、磨尖、做針頭……）。十個人分工，一天能做出四萬八千根以上，平均每人四千八百根；同樣的人如果各自從頭做到尾，一天恐怕連 20 根都做不出來。<br>亞當斯密看到的是效率與國家的富裕。馬克思讀過同一段（《資本論》多次引用亞當斯密），他看到的是另一件事——下一頁。",html:`
   <style>
     .a1a-k { left: 120px; top: 140px; }
     .a1a-t { left: 116px; top: 184px; }
@@ -233,7 +225,6 @@
     .a1a-n.many b { color: var(--ch); }
     .a1a-x { left: 120px; top: 830px; width: 1680px; padding: 22px 32px; background: var(--ch-soft); border-left: 10px solid var(--ch); font-size: 30px; line-height: 1.5; margin: 0; }
   </style>
-  <div class="abs K a1a-k">知識點一｜分工之前｜亞當斯密</div>
   <h2 class="abs T T-s a1a-t"><span class="ln">同一間製針工廠，亞當斯密看見的是奇蹟</span></h2>
   <div class="a1a-h" style="left:150px">一個人，從頭做到尾</div>
   <div class="a1a-h" style="left:720px">18 道工序，10 個人分著做</div>
@@ -258,7 +249,6 @@
     .a3b-map td { font-size: 30px; padding: 12px 16px; border-bottom: 2px solid var(--rule); }
     .a3b-map td:first-child { font-weight: 700; width: 300px; }
   </style>
-  <div class="abs K a3b-k">知識點一｜現代版｜產品團隊</div>
   <h2 class="abs T T-s a3b-t"><span class="ln">功能工廠：軟體團隊裡的異化</span></h2>
   ${mt(`
     <path class="s4 a3b-belt" d="M120 ${wt} L1340 ${wt}"/>
@@ -283,12 +273,12 @@
   <p class="abs b0-q">怎樣的主張，才值得相信？</p>`,build({tl:n,q:t,fx:e,hero:i,ink:r}){r.place("shift",sr,{drawn:!1,color:"var(--ink)",width:10}),r.drawIn(n,{duration:1.4,position:.2,ease:"none"}),e.slam(n,t(".b0-t")[0],{at:.1}),e.rise(n,t(".b0-k, .b0-q"),{at:.7,stagger:.12}),i.to(n,{...vi(38,84),r:22},.4,{duration:.7,ease:"none"}),n.to(i.el,{scaleY:.75,scaleX:1.25,duration:.14,yoyo:!0,repeat:1},1.15),i.to(n,{...vi(56,6),r:22},1.45,{duration:.35,ease:"power2.out"}),i.to(n,{...vi(70,18),r:22},1.8,{duration:.3,ease:"power2.in"}),i.to(n,{...vi(90,18),r:22},2.1,{duration:.5,ease:"power2.out"})}},dd=`<svg viewBox="0 0 500 640" width="500" height="640">
   <path d="M40 470 L460 470" stroke="#3E8CF0" stroke-width="6"/>
   <g transform="translate(250 470) scale(2.7) translate(-250 -470)">${ys(250,470,{fill:"#111418",beak:"#e0402a"})}</g>
-</svg>`,fd=Sr({id:"B1",chapter:"b",key:"popper",name:"波普",en:"Karl Popper",years:"1902–1994",place:"維也納 → 倫敦",kicker:"人物｜第 36 章",tags:[{kind:"outside",text:"生平：書外資料"}],emblem:dd,rows:[["1902","生於維也納的猶太裔家庭，父親是律師，家中藏書豐富"],["1919","17 歲短暫成為馬克思主義者，目睹同伴在衝突中遭槍殺後幻滅"],["1919","同年聽了愛因斯坦的演講；後來在阿德勒的兒童診所當志工"],["1937","為躲避納粹赴紐西蘭任教，1945 年出版《開放社會及其敵人》"],["1946","任教倫敦政經學院，1965 年受封爵士"]],why:"馬克思主義與心理分析怎麼解釋都對，愛因斯坦卻敢做出可能出錯的預測——「願不願意被證明是錯的」從此成了他區分科學的標準。",notes:"1919 年是波普自己說的思想關鍵年（見自傳《無盡的探索》）。這頁直接解釋了書中他為什麼點名精神分析與馬克思主義：兩者他都曾親身接觸過。<br>生平細節為書外資料，來源：史丹佛哲學百科、英國國家學術院紀念文。"}),ud=`<svg viewBox="0 0 500 640" width="500" height="640">
+</svg>`,fd=Sr({id:"B1",chapter:"b",key:"popper",name:"波普",en:"Karl Popper",years:"1902–1994",place:"維也納 → 倫敦",tags:[{kind:"outside",text:"生平：書外資料"}],emblem:dd,rows:[["1902","生於維也納的猶太裔家庭，父親是律師，家中藏書豐富"],["1919","17 歲短暫成為馬克思主義者，目睹同伴在衝突中遭槍殺後幻滅"],["1919","同年聽了愛因斯坦的演講；後來在阿德勒的兒童診所當志工"],["1937","為躲避納粹赴紐西蘭任教，1945 年出版《開放社會及其敵人》"],["1946","任教倫敦政經學院，1965 年受封爵士"]],why:"馬克思主義與心理分析怎麼解釋都對，愛因斯坦卻敢做出可能出錯的預測——「願不願意被證明是錯的」從此成了他區分科學的標準。",notes:"1919 年是波普自己說的思想關鍵年（見自傳《無盡的探索》）。這頁直接解釋了書中他為什麼點名精神分析與馬克思主義：兩者他都曾親身接觸過。<br>生平細節為書外資料，來源：史丹佛哲學百科、英國國家學術院紀念文。"}),ud=`<svg viewBox="0 0 500 640" width="500" height="640">
   <circle cx="160" cy="330" r="96" fill="#d6e6fb" stroke="#111418" stroke-width="10"/>
   <circle cx="340" cy="330" r="96" fill="#3E8CF0" stroke="#111418" stroke-width="10"/>
   <path d="M256 322 C 240 296, 260 296, 244 322" fill="none" stroke="#111418" stroke-width="10" stroke-linecap="round"/>
   <path d="M64 312 L28 280 M436 312 L472 280" stroke="#111418" stroke-width="10" stroke-linecap="round"/>
-</svg>`,hd=Sr({id:"B2",chapter:"b",key:"kuhn",name:"孔恩",en:"Thomas Kuhn",years:"1922–1996",place:"美國",kicker:"人物｜第 36 章",tags:[{kind:"outside",text:"生平：書外資料"}],emblem:ud,rows:[["1922","生於辛辛那提，父親是水利工程師"],["1943","哈佛物理系畢業，二戰期間從事雷達研究"],["1947","替校長柯南特的通識課備課，讀亞里斯多德《物理學》卻讀不懂"],["1949","取得物理博士，決定轉向科學史"],["1962","出版《科學革命的結構》，與波普展開論戰"]],why:"某個夏日他突然讀懂了亞里斯多德：那不是「很差的牛頓物理」，而是另一套看世界的框架。科學家看見什麼，取決於他身處的典範。",notes:"孔恩自己稱這個時刻為讀懂亞里斯多德的頓悟。可以對比波普：波普的關鍵經驗是看見「好理論」與「壞理論」，孔恩的關鍵經驗是發現自己拿錯了框架。<br>生平細節為書外資料，來源：網路哲學百科、史丹佛哲學百科。"}),fe=482,Ul=n=>182+n*128,wi=Ul(11),xd={id:"B3",chapter:"b",title:"知識點二｜一隻黑天鵝",tags:[{kind:"book",text:"第 36 章"}],hero:{x:wi-18,y:fe-46,r:16},heroStart:{x:wi-18,y:fe-46,r:.01,o:0},notes:"先讓白天鵝走完、數字跑完，問大家：「看了一千隻，夠不夠說『所有天鵝都是白的』？」收一兩個答案再按下一步，黑天鵝落下。<br>對照組是愛因斯坦：1919 年日食時星辰位置正如他預測，理論有機會被推翻卻撐住了——這正是 17 歲的波普親眼見證的事件。演繹法例子「蘇格拉底終究會死」可連到第 1 章，歸納問題連到第 17 章休謨。",html:`
+</svg>`,hd=Sr({id:"B2",chapter:"b",key:"kuhn",name:"孔恩",en:"Thomas Kuhn",years:"1922–1996",place:"美國",tags:[{kind:"outside",text:"生平：書外資料"}],emblem:ud,rows:[["1922","生於辛辛那提，父親是水利工程師"],["1943","哈佛物理系畢業，二戰期間從事雷達研究"],["1947","替校長柯南特的通識課備課，讀亞里斯多德《物理學》卻讀不懂"],["1949","取得物理博士，決定轉向科學史"],["1962","出版《科學革命的結構》，與波普展開論戰"]],why:"某個夏日他突然讀懂了亞里斯多德：那不是「很差的牛頓物理」，而是另一套看世界的框架。科學家看見什麼，取決於他身處的典範。",notes:"孔恩自己稱這個時刻為讀懂亞里斯多德的頓悟。可以對比波普：波普的關鍵經驗是看見「好理論」與「壞理論」，孔恩的關鍵經驗是發現自己拿錯了框架。<br>生平細節為書外資料，來源：網路哲學百科、史丹佛哲學百科。"}),fe=482,Ul=n=>182+n*128,wi=Ul(11),xd={id:"B3",chapter:"b",title:"知識點二｜一隻黑天鵝",tags:[{kind:"book",text:"第 36 章"}],hero:{x:wi-18,y:fe-46,r:16},heroStart:{x:wi-18,y:fe-46,r:.01,o:0},notes:"先讓白天鵝走完、數字跑完，問大家：「看了一千隻，夠不夠說『所有天鵝都是白的』？」收一兩個答案再按下一步，黑天鵝落下。<br>對照組是愛因斯坦：1919 年日食時星辰位置正如他預測，理論有機會被推翻卻撐住了——這正是 17 歲的波普親眼見證的事件。演繹法例子「蘇格拉底終究會死」可連到第 1 章，歸納問題連到第 17 章休謨。",html:`
   <style>
     .b3-k { left: 120px; top: 140px; }
     .b3-t { left: 116px; top: 184px; }
@@ -307,7 +297,6 @@
     .b3-b, .b3-stamp, .b3-new, .b3-strike { opacity: 0; }
     .b3-rip { position: absolute; left: ${wi}px; top: ${fe}px; width: 120px; height: 30px; margin: -15px 0 0 -60px; border-radius: 50%; border: 5px solid var(--ch); opacity: 0; }
   </style>
-  <div class="abs K b3-k">知識點二｜第 36 章｜波普與孔恩</div>
   <h2 class="abs T T-s b3-t"><span class="ln">好主張要能被證明為錯：一隻黑天鵝就夠了</span></h2>
   ${mt(`<path class="s4 b3-water" d="M120 ${fe} L1800 ${fe}" style="stroke: var(--ch)"/>
     ${Array.from({length:11},(n,t)=>ys(Ul(t),fe,{cls:"b3-w"})).join("")}
@@ -329,7 +318,6 @@
     .b4-stamp { opacity: 0; position: absolute; top: 600px; font: 900 48px/1 var(--f-body); color: #e0402a; border: 6px solid #e0402a; padding: 10px 20px; background: var(--paper); transform: rotate(-7deg); }
     .b4-eq { left: 120px; top: 790px; font: 900 76px/1.2 var(--f-display); white-space: nowrap; }
   </style>
-  <div class="abs K b4-k">知識點二｜第 36 章 ↔ 第 27、30 章</div>
   <h2 class="abs T T-s b4-t"><span class="ln">伏筆回收：波普點名的兩個理論</span></h2>
   <div class="box b4-c" style="left:120px"><span class="lab">第 27 章｜馬克思史觀</span><h3>「失敗的是執行者」</h3><p>理論說對了就算對，失敗了就怪執行。</p></div>
   <div class="box b4-c" style="left:1000px"><span class="lab">第 30 章｜佛洛伊德精神分析</span><h3>任何行為都解釋得通</h3><p>不論你怎麼做，都能用潛意識說明。</p></div>
@@ -350,7 +338,6 @@
     .b4a-r { left: 1000px; box-shadow: 10px 10px 0 var(--ch); opacity: 0; }
     .b4a-rip { position: absolute; left: ${se}px; top: ${Qe}px; width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%; border: 5px solid var(--one-deep); opacity: 0; }
   </style>
-  <div class="abs K b4a-k">知識點二｜1919｜日食觀測</div>
   <h2 class="abs T T-s b4a-t"><span class="ln">愛因斯坦的冒險：一個可能出錯的預測</span></h2>
   ${mt(`
     <g class="b4a-sun">
@@ -383,7 +370,6 @@
     .b5-new { opacity: 0; }
     .b5-b { left: 120px; top: 820px; width: 1680px; font-size: 30px; line-height: 1.55; margin: 0; }
   </style>
-  <div class="abs K b5-k">知識點二｜第 36 章｜孔恩</div>
   <h2 class="abs T T-s b5-t"><span class="ln">但孔恩說：科學家其實會守著典範</span></h2>
   <div class="b5-ph b5-p0" style="top:390px">01<b>常態科學</b></div>
   <div class="b5-ph b5-p1" style="top:520px">02<b>反常累積</b></div>
@@ -411,7 +397,6 @@
     .b5a-note { left: 1520px; top: 214px; font: 600 22px var(--f-mono); color: var(--faint); }
     .b5a-b { left: 120px; top: 840px; width: 1680px; font-size: 30px; line-height: 1.55; margin: 0; padding: 18px 28px; background: var(--ch-soft); border-left: 10px solid var(--ch); }
   </style>
-  <div class="abs K b5a-k">知識點二｜孔恩延伸｜柯達</div>
   <h2 class="abs T T-s b5a-t"><span class="ln">柯達：發明了數位相機，卻守著底片</span></h2>
   ${mt(`
     <path class="s4 b5a-ax" d="M${q(1975)} ${Hi} L${q(2012)+40} ${Hi}"/>
@@ -425,7 +410,7 @@
   <div class="b5a-ev" style="left:${q(2e3)-70}px"><b>2000 年代</b>數位相機、手機拍照普及</div>
   <div class="b5a-ev" style="left:${q(2012)-260}px; text-align:right; width:300px"><b>2012</b>柯達申請破產保護</div>
   <div class="abs b5a-note">示意，非實際數據</div>
-  <p class="abs b5a-b">孔恩：典範決定你看見什麼。對底片公司來說，數位相機不是機會，<br>而是一個不符合典範的反常——直到市場整個轉移。</p>`,build({tl:n,q:t,fx:e,hero:i}){e.rise(n,t(".b5a-k"),{at:0}),e.lines(n,t(".b5a-t")[0],{at:.05}),e.draw(n,t(".b5a-ax"),{at:.2,duration:.8,ease:"power2.inOut"}),n.from(t(".b5a-tick"),{opacity:0,duration:.3,stagger:.08},.5),e.rise(n,t(".b5a-ev")[0],{at:.5}),e.draw(n,t(".b5a-film"),{at:.6,duration:1,ease:"none",from:"0% 0%"}),n.from(t(".b5a-lf"),{opacity:0,duration:.4},.7),i.to(n,{x:q(1975),y:578,r:18,o:1},.9,{duration:.5,ease:"power3.in"}),i.label(n,"反常：放進抽屜",1.4),n.from(t(".b5a-ld"),{opacity:0,duration:.4},1.4),i.unlabel(n,2.6),e.draw(n,t(".b5a-digi"),{at:2.6,duration:2,ease:"none"}),i.to(n,{x:q(1994),y:568,r:18},2.6,{duration:1,ease:"none"}),i.to(n,{x:q(2001),y:360,r:18},3.6,{duration:.5,ease:"power2.in"}),i.to(n,{x:q(2012),y:274,r:18},4.1,{duration:.5,ease:"power2.out"}),n.to(t(".b5a-film"),{stroke:"var(--faint)",duration:.6},4),e.rise(n,t(".b5a-ev")[1],{at:3.6}),e.rise(n,t(".b5a-ev")[2],{at:4.4}),i.label(n,"新典範",4.7),e.rise(n,t(".b5a-note, .b5a-b"),{at:4.8,stagger:.1})}},kd=Ks({id:"B6",chapter:"b",title:"問題二｜假設與推翻條件",kicker:"問題二｜第 36 章｜波普與孔恩",tags:[{kind:"mine",text:"討論"}],q:["說出一個你們團隊正在相信的假設，","以及：看到什麼結果，你就承認它錯了？"],lenses:[["波普","這個條件真的可能發生嗎？還是怎樣都解釋得過去？","var(--c2)"],["孔恩","真的發生了，團隊會承認，還是說「那是特例」？","var(--c2)"],["休謨","你相信它，是不是只因為「過去都這樣」？","var(--graphite)","第 17 章｜歸納問題：太陽過去每天都升起，推不出明天一定升起。我們相信未來會像過去，靠的是習慣，不是邏輯證明。"]],boardLabel:"白板｜一行一組：假設 ↔ 推翻條件",board:`<div class="bd-cols">${[["我們相信","假設","例：新手引導縮短後，留存會變好"],["看到什麼就算錯","推翻條件","例：兩週後 D7 留存沒有高於對照組"]].map(([n,t,e],i)=>`<div class="bd-col" style="--cc:${i?"var(--ch)":"var(--graphite)"}"><b>${n}</b><i>${t}</i><textarea data-k="c${i}" placeholder="${e}" spellcheck="false"></textarea></div>`).join("")}</div>`,caption:"接話的人的任務：把右欄改得更具體、更可能發生。",notes:"這題讓大家互相當彼此的「否證者」：第一個人說假設和推翻條件，你把它們打在同一行的左右兩欄；接話的人按下一步後挑一個視角，讓推翻條件更具體、更可能發生，直接在右欄改寫。<br>對在座的 PM 來說，左右兩欄合起來就是一張好的實驗卡。欄位裡的灰字只是示意，打字後就會消失。<br>操作：打完按 Esc 離開輸入框，再用方向鍵換頁。"}),Td=[pd,fd,hd,xd,gd,_d,md,$d,kd],_e={x:1120,y:300,w:640,h:460},$i=(n,t)=>({x:_e.x+n/100*_e.w,y:_e.y+t/100*_e.h}),Sd={id:"C0",chapter:"c",title:"第 39 章",full:!0,bare:!0,hero:{...$i(100,50),r:22},heroStart:{...$i(-4,50),r:22},notes:"章節開場。墨線畫出一個房間：左邊塞進問題，右邊遞出答案。房間裡發生了什麼，就是這一章要吵的事。",html:`
+  <p class="abs b5a-b">孔恩：典範決定你看見什麼。對底片公司來說，數位相機不是機會，<br>而是一個不符合典範的反常——直到市場整個轉移。</p>`,build({tl:n,q:t,fx:e,hero:i}){e.rise(n,t(".b5a-k"),{at:0}),e.lines(n,t(".b5a-t")[0],{at:.05}),e.draw(n,t(".b5a-ax"),{at:.2,duration:.8,ease:"power2.inOut"}),n.from(t(".b5a-tick"),{opacity:0,duration:.3,stagger:.08},.5),e.rise(n,t(".b5a-ev")[0],{at:.5}),e.draw(n,t(".b5a-film"),{at:.6,duration:1,ease:"none",from:"0% 0%"}),n.from(t(".b5a-lf"),{opacity:0,duration:.4},.7),i.to(n,{x:q(1975),y:578,r:18,o:1},.9,{duration:.5,ease:"power3.in"}),i.label(n,"反常：放進抽屜",1.4),n.from(t(".b5a-ld"),{opacity:0,duration:.4},1.4),i.unlabel(n,2.6),e.draw(n,t(".b5a-digi"),{at:2.6,duration:2,ease:"none"}),i.to(n,{x:q(1994),y:568,r:18},2.6,{duration:1,ease:"none"}),i.to(n,{x:q(2001),y:360,r:18},3.6,{duration:.5,ease:"power2.in"}),i.to(n,{x:q(2012),y:274,r:18},4.1,{duration:.5,ease:"power2.out"}),n.to(t(".b5a-film"),{stroke:"var(--faint)",duration:.6},4),e.rise(n,t(".b5a-ev")[1],{at:3.6}),e.rise(n,t(".b5a-ev")[2],{at:4.4}),i.label(n,"新典範",4.7),e.rise(n,t(".b5a-note, .b5a-b"),{at:4.8,stagger:.1})}},kd=Ks({id:"B6",chapter:"b",title:"問題二｜假設與推翻條件",tags:[{kind:"mine",text:"討論"}],q:["說出一個你們團隊正在相信的假設，","以及：看到什麼結果，你就承認它錯了？"],lenses:[["波普","這個條件真的可能發生嗎？還是怎樣都解釋得過去？","var(--c2)"],["孔恩","真的發生了，團隊會承認，還是說「那是特例」？","var(--c2)"],["休謨","你相信它，是不是只因為「過去都這樣」？","var(--graphite)","第 17 章｜歸納問題：太陽過去每天都升起，推不出明天一定升起。我們相信未來會像過去，靠的是習慣，不是邏輯證明。"]],boardLabel:"白板｜一行一組：假設 ↔ 推翻條件",board:`<div class="bd-cols">${[["我們相信","假設","例：新手引導縮短後，留存會變好"],["看到什麼就算錯","推翻條件","例：兩週後 D7 留存沒有高於對照組"]].map(([n,t,e],i)=>`<div class="bd-col" style="--cc:${i?"var(--ch)":"var(--graphite)"}"><b>${n}</b><i>${t}</i><textarea data-k="c${i}" placeholder="${e}" spellcheck="false"></textarea></div>`).join("")}</div>`,caption:"接話的人的任務：把右欄改得更具體、更可能發生。",notes:"這題讓大家互相當彼此的「否證者」：第一個人說假設和推翻條件，你把它們打在同一行的左右兩欄；接話的人按下一步後挑一個視角，讓推翻條件更具體、更可能發生，直接在右欄改寫。<br>對在座的 PM 來說，左右兩欄合起來就是一張好的實驗卡。欄位裡的灰字只是示意，打字後就會消失。<br>操作：打完按 Esc 離開輸入框，再用方向鍵換頁。"}),Td=[pd,fd,hd,xd,gd,_d,md,$d,kd],_e={x:1120,y:300,w:640,h:460},$i=(n,t)=>({x:_e.x+n/100*_e.w,y:_e.y+t/100*_e.h}),Sd={id:"C0",chapter:"c",title:"第 39 章",full:!0,bare:!0,hero:{...$i(100,50),r:22},heroStart:{...$i(-4,50),r:22},notes:"章節開場。墨線畫出一個房間：左邊塞進問題，右邊遞出答案。房間裡發生了什麼，就是這一章要吵的事。",html:`
   <style>
     .c0-k { left: 140px; top: 300px; }
     .c0-t { left: 128px; top: 350px; }
@@ -438,11 +423,11 @@
   <div class="abs c0-in">字</div>`,build({tl:n,q:t,fx:e,hero:i,ink:r}){r.place("room",_e,{drawn:!1,color:"var(--ink)",width:10}),r.drawIn(n,{duration:1.3,position:.2}),e.slam(n,t(".c0-t")[0],{at:.1}),e.rise(n,t(".c0-k, .c0-q"),{at:.7,stagger:.12}),n.from(t(".c0-in"),{opacity:0,scale:.6,duration:.5,ease:"back.out(2)"},1),i.label(n,"問題",.8),i.to(n,{...$i(24,50),r:22},1.4,{duration:.4,ease:"power2.in"}),i.to(n,{...$i(50,50),r:22,o:0},1.8,{duration:.3}),i.unlabel(n,1.4),i.to(n,{...$i(76,50),r:22,o:1},2.4,{duration:.3}),i.to(n,{...$i(100,50),r:22},2.7,{duration:.4,ease:"power2.out"}),i.label(n,"答案",3)}},Md=`<svg viewBox="0 0 500 640" width="500" height="640">
   ${["1","0","1","1","0"].map((n,t)=>`<rect x="${30+t*88}" y="290" width="88" height="96" fill="${t===2?"#6B63FF":"#f9faf6"}" stroke="#111418" stroke-width="8"/><text x="${74+t*88}" y="358" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="56" font-weight="600" fill="#111418">${n}</text>`).join("")}
   <path d="M250 270 L216 210 L284 210 Z" fill="#ffc21a" stroke="#111418" stroke-width="8" stroke-linejoin="round"/>
-</svg>`,Cd=Sr({id:"C1",chapter:"c",key:"turing",name:"圖靈",en:"Alan Turing",years:"1912–1954",place:"英國",kicker:"人物｜第 39 章",tags:[{kind:"book",text:"第 39 章"},{kind:"outside",text:"1936 與晚年：書外資料"}],emblem:Md,rows:[["1912","生於倫敦"],["1936","在劍橋提出「圖靈機」：照規則讀寫符號的抽象機器"],["1939","二戰期間在布萊切利莊園破解德軍的「謎」密碼機"],["1950","發表〈計算機器與智能〉，提出模仿遊戲"],["1952","因同性戀被定罪，1954 年過世；2013 年獲英國王室赦免"]],why:"他證明「照規則處理符號」就能完成驚人的計算，也親手造出破解密碼的機器：如果機器回答得和人一樣好，憑什麼說它不會思考？",notes:"書中提到他協助發明現代電腦、破解謎密碼機、1950 年提出模仿遊戲；1936 年的圖靈機與晚年遭遇為書外資料。<br>注意 1936 的「照規則讀寫符號」和瑟爾中文房裡的「照規則手冊配對符號」是同一件事，兩人對它的評價卻相反，這可以是知識點三的開場。"}),Pd=`<svg viewBox="0 0 500 640" width="500" height="640">
+</svg>`,Cd=Sr({id:"C1",chapter:"c",key:"turing",name:"圖靈",en:"Alan Turing",years:"1912–1954",place:"英國",tags:[{kind:"book",text:"第 39 章"},{kind:"outside",text:"1936 與晚年：書外資料"}],emblem:Md,rows:[["1912","生於倫敦"],["1936","在劍橋提出「圖靈機」：照規則讀寫符號的抽象機器"],["1939","二戰期間在布萊切利莊園破解德軍的「謎」密碼機"],["1950","發表〈計算機器與智能〉，提出模仿遊戲"],["1952","因同性戀被定罪，1954 年過世；2013 年獲英國王室赦免"]],why:"他證明「照規則處理符號」就能完成驚人的計算，也親手造出破解密碼的機器：如果機器回答得和人一樣好，憑什麼說它不會思考？",notes:"書中提到他協助發明現代電腦、破解謎密碼機、1950 年提出模仿遊戲；1936 年的圖靈機與晚年遭遇為書外資料。<br>注意 1936 的「照規則讀寫符號」和瑟爾中文房裡的「照規則手冊配對符號」是同一件事，兩人對它的評價卻相反，這可以是知識點三的開場。"}),Pd=`<svg viewBox="0 0 500 640" width="500" height="640">
   <path d="M110 260 L110 170 L390 170 L390 260 M390 340 L390 450 L110 450 L110 340" fill="none" stroke="#111418" stroke-width="10" stroke-linecap="round"/>
   <path d="M30 300 L96 300 M404 300 L470 300" stroke="#111418" stroke-width="10" stroke-linecap="round"/>
   <text x="250" y="352" text-anchor="middle" font-family="Noto Serif TC, Noto Serif CJK TC, serif" font-size="150" font-weight="900" fill="#6B63FF">字</text>
-</svg>`,Ld=Sr({id:"C2",chapter:"c",key:"searle",name:"瑟爾",en:"John Searle",years:"1932–2025",place:"美國",kicker:"人物｜第 39 章",tags:[{kind:"outside",text:"生平：書外資料"}],emblem:Pd,rows:[["1932","生於丹佛，母親是醫師，在他 13 歲時過世"],["1955","赴牛津讀哲學，受語言哲學家奧斯汀賞識與推薦"],["1959","起任教柏克萊，教了將近六十年"],["1969","出版《言語行為》，研究人如何用語言表達意義、完成行動"],["1980","提出中文房論證；2025 年 9 月過世，享年 93 歲"]],why:"他不是從電腦科學、而是從語言哲學走進 AI 辯論：研究了一輩子「話語如何承載意義」，自然會追問——只會照規則處理符號的機器，懂得意義嗎？",notes:"生平細節為書外資料（維基百科、衛報訃聞）。<br>補充背景供主持參考：他晚年因性騷擾案，柏克萊撤銷了他的榮譽教授資格；是否在現場提及請自行判斷。"}),Re=120,vs=960-3.5*Re,Hr=384,ki=n=>vs+n*Re+Re/2,Od=["","1","0","1","1","",""],lo=[[4,"0"],[3,"0"],[2,"1"]],Ad=[["1","0","往左一格","繼續進位"],["0","1","不動","停"],["空白","1","不動","停"]],co=[0,0,1],Nr=Hr-32,Ed={id:"C1a",chapter:"c",title:"圖靈機（1936）",tags:[{kind:"outside",text:"1936 論文：書外資料"}],hero:{x:ki(2),y:Nr,r:18},heroStart:{x:ki(4),y:-80,r:18},notes:"圖靈機不是一台真的機器，是 1936 年論文〈論可計算數〉裡的思想實驗：一條無限長的紙帶、一個一次只看一格的讀寫頭、一張規則表。<br>畫面上跑的是一個真的小程式：把二進位的 1011（11）加 1。讀寫頭從最右邊開始，讀到 1 就寫 0、往左進位；讀到 0 就寫 1、停。結果是 1100（12）。<br>給 PM 的橋：同一篇論文提出「通用圖靈機」——把別台機器的規則表也寫在紙帶上，一台機器就能模擬任何機器。這就是「程式也是資料」，也是今天每一台電腦、每一個大型語言模型在理論上的祖先：LLM 做的事，本質上也是照規則（矩陣運算）處理符號（token）。<br>伏筆：瑟爾要問的正是——規則處理得再好，算不算懂？",html:`
+</svg>`,Ld=Sr({id:"C2",chapter:"c",key:"searle",name:"瑟爾",en:"John Searle",years:"1932–2025",place:"美國",tags:[{kind:"outside",text:"生平：書外資料"}],emblem:Pd,rows:[["1932","生於丹佛，母親是醫師，在他 13 歲時過世"],["1955","赴牛津讀哲學，受語言哲學家奧斯汀賞識與推薦"],["1959","起任教柏克萊，教了將近六十年"],["1969","出版《言語行為》，研究人如何用語言表達意義、完成行動"],["1980","提出中文房論證；2025 年 9 月過世，享年 93 歲"]],why:"他不是從電腦科學、而是從語言哲學走進 AI 辯論：研究了一輩子「話語如何承載意義」，自然會追問——只會照規則處理符號的機器，懂得意義嗎？",notes:"生平細節為書外資料（維基百科、衛報訃聞）。<br>補充背景供主持參考：他晚年因性騷擾案，柏克萊撤銷了他的榮譽教授資格；是否在現場提及請自行判斷。"}),Re=120,vs=960-3.5*Re,Hr=384,ki=n=>vs+n*Re+Re/2,Od=["","1","0","1","1","",""],lo=[[4,"0"],[3,"0"],[2,"1"]],Ad=[["1","0","往左一格","繼續進位"],["0","1","不動","停"],["空白","1","不動","停"]],co=[0,0,1],Nr=Hr-32,Ed={id:"C1a",chapter:"c",title:"圖靈機（1936）",tags:[{kind:"outside",text:"1936 論文：書外資料"}],hero:{x:ki(2),y:Nr,r:18},heroStart:{x:ki(4),y:-80,r:18},notes:"圖靈機不是一台真的機器，是 1936 年論文〈論可計算數〉裡的思想實驗：一條無限長的紙帶、一個一次只看一格的讀寫頭、一張規則表。<br>畫面上跑的是一個真的小程式：把二進位的 1011（11）加 1。讀寫頭從最右邊開始，讀到 1 就寫 0、往左進位；讀到 0 就寫 1、停。結果是 1100（12）。<br>給 PM 的橋：同一篇論文提出「通用圖靈機」——把別台機器的規則表也寫在紙帶上，一台機器就能模擬任何機器。這就是「程式也是資料」，也是今天每一台電腦、每一個大型語言模型在理論上的祖先：LLM 做的事，本質上也是照規則（矩陣運算）處理符號（token）。<br>伏筆：瑟爾要問的正是——規則處理得再好，算不算懂？",html:`
   <style>
     .c1a-k { left: 120px; top: 140px; }
     .c1a-t { left: 116px; top: 184px; }
@@ -468,7 +453,6 @@
     .c1a-replay:focus-visible { outline: 4px solid var(--one); }
     .c1a-b { left: 120px; top: 884px; width: 1680px; font-size: 30px; line-height: 1.55; margin: 0; }
   </style>
-  <div class="abs K c1a-k">知識點三｜1936｜圖靈機</div>
   <h2 class="abs T T-s c1a-t"><span class="ln">圖靈機：一條紙帶、一個讀寫頭、一張規則表</span></h2>
   <div class="c1a-dots" style="left:${vs-90}px">…</div><div class="c1a-dots" style="left:${vs+7*Re+24}px">…</div>
   ${Od.map((n,t)=>{const e=lo.find(([i])=>i===t);return`<div class="c1a-cell${n?"":" blank"}" style="left:${ki(t)}px"><span class="a">${n||"空白"}</span>${e?`<span class="b">${e[1]}</span>`:""}</div>`}).join("")}
@@ -494,7 +478,6 @@
     .c1b-n b { font: 600 110px/1 var(--f-mono); color: var(--ch); }
     .c1b-n div { flex: 1; }
   </style>
-  <div class="abs K c1b-k">知識點三｜1950｜模仿遊戲</div>
   <h2 class="abs T T-s c1b-t"><span class="ln">模仿遊戲：把「機器會思考嗎？」換成一場考試</span></h2>
   ${mt(`
     <g class="c1b-pc">${pi(ue,Ft,220,{fill:"#f9faf6"})}</g>
@@ -529,7 +512,6 @@
     .c3-v.r { left: 1000px; box-shadow: 10px 10px 0 var(--ch); } .c3-v.r i { color: #e0402a; }
     .c3-v { opacity: 0; }
   </style>
-  <div class="abs K c3-k">知識點三｜第 39 章｜圖靈與瑟爾</div>
   <h2 class="abs T T-m c3-t"><span class="ln">答得像懂，不等於真的懂</span></h2>
   ${mt(`
     <path class="s10 c3-room" d="M${j.x} ${Jt-34} L${j.x} ${j.y} L${j.x+j.w} ${j.y} L${j.x+j.w} ${Jt-34} M${j.x+j.w} ${Jt+34} L${j.x+j.w} ${j.y+j.h} L${j.x} ${j.y+j.h} L${j.x} ${Jt+34}"/>
@@ -565,7 +547,6 @@
     .c3b-nums b { font: 600 80px/1 var(--f-mono); color: var(--ch); }
     .c3b-nums div > span { font: 600 24px var(--f-body); color: var(--ink-2); }
   </style>
-  <div class="abs K c3b-k">知識點三｜延伸｜亞馬遜，2014–2018</div>
   <h2 class="abs T T-s c3b-t"><span class="ln">亞馬遜的 AI 履歷篩選：它學會的是「過去」</span></h2>
   ${[0,1,2].map(n=>`<div class="c3b-stack" style="top:${380-n*18}px; left:${140+n*18}px"><i></i><i></i><i style="width:60%"></i></div>`).join("")}
   <div class="abs c3b-sl">訓練資料：過去十年的履歷<br>（錄取者多為男性）</div>
@@ -578,7 +559,7 @@
   <div class="box c3b-c c3b-old"><span class="lab">2018｜路透社報導</span><p>模型會扣分含「women’s」的履歷。修掉這些字眼後，仍無法保證它不會找到別的方式歧視，亞馬遜最後放棄了這套工具。</p></div>
   <div class="box c3b-c c3b-new"><span class="lab">2024｜換成語言模型，只換名字</span>
     <div class="c3b-nums"><div><b><span class="n1">0</span>%</b><span>偏好白人<br>聯想名字</span></div><div><b><span class="n2">0</span>%</b><span>偏好女性<br>聯想名字</span></div></div>
-    <p>六年後、換了一代技術，模式還在。</p></div>`,build({tl:n,q:t,fx:e,hero:i,step:r}){e.rise(n,t(".c3b-k"),{at:0}),e.lines(n,t(".c3b-t")[0],{at:.05}),n.from(t(".c3b-stack"),{opacity:0,y:-30,duration:.5,ease:"expo.out",stagger:.1},.3),e.rise(n,t(".c3b-sl"),{at:.6}),e.draw(n,t(".c3b-a1"),{at:.8,duration:.5}),n.from(t(".c3b-m"),{opacity:0,scale:.8,duration:.6,ease:"back.out(2)"},1),n.fromTo(t(".c3b-stack"),{x:0},{x:40,opacity:.35,duration:.6,ease:"power2.in",stagger:.08,immediateRender:!1},1.4),e.draw(n,t(".c3b-a2"),{at:2,duration:.6,stagger:.15}),n.from(t(".c3b-r"),{opacity:0,x:-40,duration:.6,ease:"expo.out",stagger:.25},2.3),n.from(t(".c3b-r .st"),{opacity:0,scale:.6,duration:.4,ease:"back.out(2)",stagger:.25},2.9),n.from(t(".c3b-rb .mn"),{opacity:0,x:-20,duration:.35},3.5),i.to(n,{x:ut.x+ut.w/2,y:ut.y-40,r:18,o:1},2.4,{duration:.5,ease:"power3.in"}),i.to(n,{x:1710,y:Zi+40,r:18},3,{duration:.6,ease:"power2.inOut"}),i.color(n,"#a3a8ae",3.5),i.label(n,"只差兩個字",3.7),e.rise(n,t(".c3b-old"),{at:3.6}),r(s=>{s.fromTo(t(".c3b-new"),{opacity:0,y:40},{opacity:1,y:0,duration:.8,ease:"expo.out",immediateRender:!1},0),e.count(s,t(".c3b-new .n1")[0],0,85,{at:.4,duration:1.4}),e.count(s,t(".c3b-new .n2")[0],0,11,{at:.6,duration:1.2})})}},zd=Ks({id:"C4",chapter:"c",title:"問題三｜誰做、誰負責",kicker:"問題三｜第 39 章｜圖靈與瑟爾",tags:[{kind:"mine",text:"討論"}],q:["如果你們團隊要導入 AI 篩選（履歷、客訴、申請案），","哪一步交給它？哪一步一定要人看？"],lenses:[["圖靈","如果它在這一步的表現跟人一樣好，你拒絕它的理由是什麼？","var(--c3)"],["瑟爾","這一步需要的是「答對」，還是「理解」？","var(--c3)"],["休謨","它學的是過去的決定——過去本身公平嗎？","var(--c2)"]],boardLabel:"白板｜把流程拆開：誰做、誰負責",board:`<div class="bd-cols">${[["交給 AI","這一步讓它做","例：先把申請依類別分好"],["一定要人看","這一步要人判斷","例：最後淘汰誰"],["錯了誰負責","出事時找誰","例：PM？法務？主管？"]].map(([n,t,e],i)=>`<div class="bd-col" style="--cc:${["var(--ch)","var(--ink)","#e0402a"][i]}"><b>${n}</b><i>${t}</i><textarea data-k="c${i}" placeholder="${e}" spellcheck="false"></textarea></div>`).join("")}</div>`,caption:"先挑一個流程，一行寫一個步驟；左右兩欄寫完，最後一欄一定要有名字。",notes:"問題落在設計和責任：請第一個人挑一個他熟悉的流程（履歷、客訴、退款、申請審核……），說出哪幾步交給 AI、哪幾步一定要人看，你把步驟打進前兩欄；接著問「如果這一步出錯，誰負責？」，打進第三欄。<br>按下一步揭曉三個視角。<br>「休謨」接回上一頁亞馬遜的案例，也接回知識點二。<br>收尾：看第三欄——哪些步驟大家寫不出負責人？那就是還不該交給 AI 的地方。"}),Bd=[Sd,Cd,Ed,Rd,Ld,Dd,Nd,zd],Ti=[420,960,1500],jt=640,Wn=[["制度塑造信念","我們相信什麼，常常來自所處的結構","var(--c1)"],["信念要能被檢驗","值得相信的主張，要說得出怎樣算錯","var(--c2)"],["檢驗標準也要被檢驗","「看起來懂」可以當證據嗎？","var(--c3)"]],Fd={id:"D1",chapter:"close",title:"三章串起來",hero:{x:Ti[2]-200,y:jt-22,r:22},heroStart:{x:140,y:jt-22,r:22},notes:"回收開場的備忘錄。請兩三位自願者分享：你記下的那次改變心意，是被哪一道關卡推動的？是發現自己的想法其實來自環境（1）、遇到推翻它的證據（2），還是發現原本判斷的標準有問題（3）？沿用「一人說、兩人接」，其他人可以帶著今天任何一個人的視角來呼應或挑戰。",html:`
+    <p>六年後、換了一代技術，模式還在。</p></div>`,build({tl:n,q:t,fx:e,hero:i,step:r}){e.rise(n,t(".c3b-k"),{at:0}),e.lines(n,t(".c3b-t")[0],{at:.05}),n.from(t(".c3b-stack"),{opacity:0,y:-30,duration:.5,ease:"expo.out",stagger:.1},.3),e.rise(n,t(".c3b-sl"),{at:.6}),e.draw(n,t(".c3b-a1"),{at:.8,duration:.5}),n.from(t(".c3b-m"),{opacity:0,scale:.8,duration:.6,ease:"back.out(2)"},1),n.fromTo(t(".c3b-stack"),{x:0},{x:40,opacity:.35,duration:.6,ease:"power2.in",stagger:.08,immediateRender:!1},1.4),e.draw(n,t(".c3b-a2"),{at:2,duration:.6,stagger:.15}),n.from(t(".c3b-r"),{opacity:0,x:-40,duration:.6,ease:"expo.out",stagger:.25},2.3),n.from(t(".c3b-r .st"),{opacity:0,scale:.6,duration:.4,ease:"back.out(2)",stagger:.25},2.9),n.from(t(".c3b-rb .mn"),{opacity:0,x:-20,duration:.35},3.5),i.to(n,{x:ut.x+ut.w/2,y:ut.y-40,r:18,o:1},2.4,{duration:.5,ease:"power3.in"}),i.to(n,{x:1710,y:Zi+40,r:18},3,{duration:.6,ease:"power2.inOut"}),i.color(n,"#a3a8ae",3.5),i.label(n,"只差兩個字",3.7),e.rise(n,t(".c3b-old"),{at:3.6}),r(s=>{s.fromTo(t(".c3b-new"),{opacity:0,y:40},{opacity:1,y:0,duration:.8,ease:"expo.out",immediateRender:!1},0),e.count(s,t(".c3b-new .n1")[0],0,85,{at:.4,duration:1.4}),e.count(s,t(".c3b-new .n2")[0],0,11,{at:.6,duration:1.2})})}},zd=Ks({id:"C4",chapter:"c",title:"問題三｜誰做、誰負責",tags:[{kind:"mine",text:"討論"}],q:["如果你們團隊要導入 AI 篩選（履歷、客訴、申請案），","哪一步交給它？哪一步一定要人看？"],lenses:[["圖靈","如果它在這一步的表現跟人一樣好，你拒絕它的理由是什麼？","var(--c3)"],["瑟爾","這一步需要的是「答對」，還是「理解」？","var(--c3)"],["休謨","它學的是過去的決定——過去本身公平嗎？","var(--c2)"]],boardLabel:"白板｜把流程拆開：誰做、誰負責",board:`<div class="bd-cols">${[["交給 AI","這一步讓它做","例：先把申請依類別分好"],["一定要人看","這一步要人判斷","例：最後淘汰誰"],["錯了誰負責","出事時找誰","例：PM？法務？主管？"]].map(([n,t,e],i)=>`<div class="bd-col" style="--cc:${["var(--ch)","var(--ink)","#e0402a"][i]}"><b>${n}</b><i>${t}</i><textarea data-k="c${i}" placeholder="${e}" spellcheck="false"></textarea></div>`).join("")}</div>`,caption:"先挑一個流程，一行寫一個步驟；左右兩欄寫完，最後一欄一定要有名字。",notes:"問題落在設計和責任：請第一個人挑一個他熟悉的流程（履歷、客訴、退款、申請審核……），說出哪幾步交給 AI、哪幾步一定要人看，你把步驟打進前兩欄；接著問「如果這一步出錯，誰負責？」，打進第三欄。<br>按下一步揭曉三個視角。<br>「休謨」接回上一頁亞馬遜的案例，也接回知識點二。<br>收尾：看第三欄——哪些步驟大家寫不出負責人？那就是還不該交給 AI 的地方。"}),Bd=[Sd,Cd,Ed,Rd,Ld,Dd,Nd,zd],Ti=[420,960,1500],jt=640,Wn=[["制度塑造信念","我們相信什麼，常常來自所處的結構","var(--c1)"],["信念要能被檢驗","值得相信的主張，要說得出怎樣算錯","var(--c2)"],["檢驗標準也要被檢驗","「看起來懂」可以當證據嗎？","var(--c3)"]],Fd={id:"D1",chapter:"close",title:"三章串起來",hero:{x:Ti[2]-200,y:jt-22,r:22},heroStart:{x:140,y:jt-22,r:22},notes:"回收開場的備忘錄。請兩三位自願者分享：你記下的那次改變心意，是被哪一道關卡推動的？是發現自己的想法其實來自環境（1）、遇到推翻它的證據（2），還是發現原本判斷的標準有問題（3）？沿用「一人說、兩人接」，其他人可以帶著今天任何一個人的視角來呼應或挑戰。",html:`
   <style>
     .d1-k { left: 120px; top: 140px; }
     .d1-t { left: 116px; top: 184px; }
@@ -588,7 +569,6 @@
     .d1-n { font: 600 64px var(--f-mono); }
     .d1-q { left: 120px; top: 880px; width: 1680px; font-size: 40px; font-weight: 700; }
   </style>
-  <div class="abs K d1-k">三章串起來</div>
   <h2 class="abs T T-m d1-t"><span class="ln">一個主張值得相信的三道關卡</span></h2>
   ${mt(Ti.map((n,t)=>`<g class="d1-gate"><path class="s10 d1-gp" d="M${n-120} ${jt} L${n-120} ${jt-210} L${n+120} ${jt-210} L${n+120} ${jt}" style="stroke:${Wn[t][2]}"/><text x="${n}" y="${jt-120}" text-anchor="middle" class="d1-n" fill="${Wn[t][2]}">${t+1}</text></g>`).join(""))}
   ${Wn.map(([n,t],e)=>`<div class="d1-g" style="left:${Ti[e]}px"><h3>${n}</h3><p>${t}</p></div>`).join("")}
@@ -601,7 +581,6 @@
     .d2-r span { font: 700 44px var(--f-body); flex: 1; }
     .d2-r em { font: 600 24px var(--f-mono); font-style: normal; padding: 6px 12px; border: 3px solid currentColor; margin-right: 150px; }
   </style>
-  <div class="abs K d2-k">帶回工作使用</div>
   <h2 class="abs T T-m d2-t"><span class="ln">五個檢查問題</span></h2>
   ${po.map(([n,t,e],i)=>`<div class="d2-r" style="top:${Br(i)-48}px"><b style="color:${e}">${i+1}</b><span>${n}</span><em style="color:${e}">${t}</em></div>`).join("")}`,build({tl:n,q:t,fx:e,hero:i}){e.rise(n,t(".d2-k"),{at:0}),e.lines(n,t(".d2-t")[0],{at:.05}),n.from(t(".d2-r"),{opacity:0,x:-40,duration:.6,ease:"expo.out",stagger:.16},.3),po.forEach((r,s)=>{s&&i.to(n,{x:1760,y:Br(s),r:18},.5+s*.32,{duration:.28,ease:"back.out(2)"})})}},Ze={x:1506,y:616},jd={id:"D3",chapter:"close",title:"結語",bare:!0,hero:{...Ze,r:18},heroStart:{x:Ze.x,y:-100,r:18},notes:"慢慢念一次。然後停下來，不要再補充。黃點落下，成為句點。",html:`
   <style>
